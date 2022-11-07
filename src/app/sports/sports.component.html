@@ -1,0 +1,53 @@
+<div>
+    <div class="dropdown">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Spor
+        </a>
+    
+        <ul class="dropdown-menu">
+          <li>
+            <a
+              class="dropdown-item"
+              href="business" target="_self"
+              >İş</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="entertaintment" target="_self"
+              >Eğlence</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="general" target="_self">Genel</a>
+          </li>
+          <li><a class="dropdown-item" href="health" target="_self">Sağlık</a></li>
+          <li>
+            <a class="dropdown-item" href="science" target="_self">Bilim</a>
+          </li>
+          <li><a class="dropdown-item" href="sports" target="_self">Spor</a></li>
+          <li>
+            <a class="dropdown-item" href="technology" target="_self">Teknoloji</a>
+          </li>
+        </ul>
+      </div>
+<div>
+    <h3>Spor Manşetleri</h3>
+    <div class="row d-flex flex-wrap">
+        <div class="col-lg-3 mt-3 mb-3" *ngFor="let headlines of topHeadlinesResult">
+            <div class="card">
+                <img src={{headlines.urlToImage}} width="100%" style="height:200px" class="card-img-top" alt=""/>
+                <div class="card-body">
+                    <h5 class="card-title">{{headlines.title}}</h5>
+                    <a  class="btn btn-dark btn-sm-2" href="{{headlines.url}}" target="blank">İncele</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

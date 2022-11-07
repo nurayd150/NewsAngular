@@ -1,0 +1,16 @@
+.pencere{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.colon{
+    height: 100%;
+    position: absolute;
+    top: 7px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    contain: content;
+    flex-wrap: wrap;
+}

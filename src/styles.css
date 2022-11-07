@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+*{margin: 0;
+padding: 0;}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-title{
+    font-weight: bold;
+}
+@media only screen and (max-width: 650px) {
+    [class*="col-"] {
+      width: 100%;
+      float: left;
+      overflow: hidden;
+    }
+}
